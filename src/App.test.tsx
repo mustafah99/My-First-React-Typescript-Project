@@ -1,9 +1,8 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Counter from "./components/counter";
 
-test('renders learn react link', () => {
-  <App message={"Hello World"} />
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders learn react link", () => {
+  <Counter />;
+  const linkElement = screen.debug;
 });
